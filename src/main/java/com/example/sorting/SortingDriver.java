@@ -9,9 +9,9 @@ public class SortingDriver {
 
         // Generate array of random Integers
         Integer[] arr = IntStream.generate(() -> (int) (Math.random() * 5000))
-                                 .boxed()
-                                 .limit(100)
-                                 .toArray(Integer[]::new);
+                .boxed()
+                .limit(100)
+                .toArray(Integer[]::new);
 
         printFirstTenOfArray(arr);
 

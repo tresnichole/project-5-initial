@@ -80,13 +80,13 @@ public class SortingUtility {
      */
     private static <T extends Comparable<T>> void gnomierSort(T[] data, int upperBound) {
 
-            int position = upperBound;
+        int position = upperBound;
 
-            while (position > 0 && data[position - 1].compareTo(data[position]) > 0) {
-                swap(data, position - 1, position);
-                position--;
-            }
+        while (position > 0 && data[position - 1].compareTo(data[position]) > 0) {
+            swap(data, position - 1, position);
+            position--;
         }
+    }
 
 
     private static <T extends Comparable<T>> void swap(T[] data, int index1, int index2) {
